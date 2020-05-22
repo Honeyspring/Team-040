@@ -6,7 +6,7 @@ barebones setup for JavaScript / Node projects replace this with a one-liner phr
 
 ## About
 
-What is this project about. Ok to enrich here or the section above it with an image. 
+ Project 16:_help reduce one source of corruption and bribery in your community.[online voting system]  . 
 
 Once this repo has been setup on Codacy by the TTL, replace the above badge with the actual one from the Codacy dashboard, and add the code coverage badge as well. This is mandatory
 
@@ -17,8 +17,13 @@ This is a simple JavaScript starter repo template for setting up your project. T
 - Eslint & Prettier: For formatting code to match ESlint AirBnB coding standard. You might need to install the ESlint and Prettier plugins for your code editor to make the most of these utilities
 
 ## Why
-
-Talk about what problem this solves, what SDG(s) and SGD targets it addresses and why these are imoirtant
+ 1 less corruption in voting
+ .2.security of life and property as voters don't leave their comfort zone 
+ 3. Everyone gets to vote ,Since its easy to cast votes 
+ 4.manages or reduce the cost of carrying out election as the app eliminates electoral tools like ballot paper,box,vest,transportation,etc (edited) 
+ 5.Eliminates unaccepted vote as it is not done manually so ballot paper can not be torn,stained or thumb print ink appearing between two parties choices
+ 6.Eliminates/reduces rigging as vote are cast simultaneously and calculations as done online and all can monitor votes  without tampering
+ 7.Prevents case of double voting as users can only vote once                                                                                         
 
 ## Usage
  How would someone use what you have built, include URLs to the deployed app, service e.t.c when you have it setup
@@ -46,6 +51,11 @@ This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bun
 - Run your app in local dev mode: `yarn start`. This puts the bundled app in a `dist` folder, set up a local web server at localhost:1234, and continues to watch for your code changes which it syncs with the local server. This means if you loaded the app in a browser, it will auto-refresh as you code along. Feel free to use whatever bundler best meets your needs. Parcel was only added as a sample and for those looking for a simple but effective solution to the hassle of bundlers. 
 
 ## Authors
+Stanley Chibuike  https://github.com/Stanyke (FRONTEND ,BACKEND)
+Peter https://github.com/peterchims (DESIGN,FRONTEND)
+OYEWO Ayooluwa https://github.com/oyewoas (MENTOR)
+Samuel Aniefiok https://github.com/Cool-sami12 (BACKEND ,TTL)
+Ogunsola oyindamola https://github.com/Honeyspring( FRONTEND ,Assistant TTL)
 
 List the team behind this project. Their names linked to their Github, LinkedIn, or Twitter accounts should siffice. Ok to signify the role they play in the project, including the TTL and mentor
 
