@@ -52,7 +52,7 @@ This starter uses [Parcel](https://parceljs.org/getting_started.html) as the bun
 
 ## Authors
 Stanley Chibuike  https://github.com/Stanyke (FRONTEND ,BACKEND)
-Peter https://github.com/peterchims (DESIGN,FRONTEND)
+Ogba Peter Chimaobi https://github.com/peterchims (DESIGN,FRONTEND)
 OYEWO Ayooluwa https://github.com/oyewoas (MENTOR)
 Samuel Aniefiok https://github.com/Cool-sami12 (BACKEND ,TTL)
 Ogunsola oyindamola https://github.com/Honeyspring( FRONTEND ,Assistant TTL)
