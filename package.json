@@ -19,20 +19,19 @@
     "lint": "eslint \"src/**/*.js\"",
     "start": "parcel ./src/index.html"
   },
-  "author": {
-    "name": "Build For SDG",
-    "email": "buildforsdg@andela.com"
-  },
+  "author": "Build For SDG <buildforsdg@andela.com>",
   "homepage": "https://github.com/BuildForSDG/js-starter#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BuildForSDG/js-starter.git"
+    "url": "git+https://github.com/BuildForSDG/js-starter.git"
   },
   "bugs": {
     "url": "https://github.com/BuildForSDG/js-starter/issues"
   },
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "prettier": "^2.0.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
