@@ -5,7 +5,7 @@ import logo from '../icons/elections.ico';
 import { Link } from 'react-router-dom';
 
 
-  const Header = ({username}) => {
+  const Header = () => {
 
       return (
         // <!--Top bar --->
