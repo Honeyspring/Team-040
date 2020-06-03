@@ -1,0 +1,51 @@
+.container{
+  flex-wrap:wrap;
+
+}
+.bg-color{
+  color:  rgb(8, 148, 101);
+  }
+ .container  article:nth-of-type(1),article:nth-of-type(4){
+background-color: rgb(6, 56, 39) ;
+color:#fff;
+  }
+  .ta{
+    text-align:center ;
+    
+  }
+  .bd{
+    border-style: solid;
+    border-width:3px;
+  }
+  .link:hover {
+    transition: color .15s ease-in;
+    color:#fff;
+    background-color:rgb(8, 148, 101) ;
+   }
+   .sign{
+    background-color: rgb(8, 148, 101);  
+   color:#fff;
+   
+   }
+   .bg{
+    background-color: #fff;
+    color: rgb(8, 148, 101);
+  }
+  input[type=text]{
+background: url(../icons/elections.ico) no-repeat scroll 8px 9px #fff;
+padding-left:39px;
+  }
+input[type=password]{
+background: url(../icons/password.ico) no-repeat scroll 8px 9px #fff;
+padding-left:45px;
+}
+input[type=email]{
+  background: url(../icons/email.ico) no-repeat scroll 8px 9px #fff;
+  padding-left:45px;
+  }
+      
+   @media screen and (min-width: 480px) {
+    .mw{
+      max-width:32rem; 
+     }
+    }

@@ -1,8 +1,14 @@
 import React from 'react';
-import propTypes from 'prop-types';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.css';
+import { BrowserRouter as Router, Route,Switch } from "react-router-dom";
 import { Provider } from 'react-redux';
 import { toast } from 'react-toastify';
+import propTypes from 'prop-types';
+/* import Welcome from './Components/Welcome/Welcome';
+first welcome page,switch between  them with this*/
+import Welcome from './Components/Welcome/Welcom';
+import SignIn from './Components/Welcome/SignIn';
+import Register from './Components/Welcome/Register';
 
 /**
  * ROUTER APP COMPONENT
@@ -10,22 +16,32 @@ import { toast } from 'react-toastify';
  * @prop store
  */
 
-const App = ({ store }) => {
-  toast.configure(); // Init the toast notification in Application globaly
-  return (
-    <Provider store={store}>
-      <Router>
-        <Switch>
-          <Route exact path="/" component={() => <h1>HOME PAGE</h1>} />
-          <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />
-        </Switch>
-      </Router>
-    </Provider>
-  );
-};
 
-App.propTypes = {
-  store: propTypes.object.isRequired
-};
+const App =({store})=>{
+  toast.configure(); // Init the toast notification in Application globaly
+  return(
+    <Provider store={store}>
+  <Router >
+  <Switch>
+
+    <Route path="/signIn" component={SignIn} />
+    <Route path="/Register" component={Register} />
+    <Route path="/Welcome" component={Welcome} />
+    
+    </Switch>
+  </Router>
+  </Provider>
+  );
+  }
+
+  App.propTypes = {
+    store: propTypes.object.isRequired
+  };
 
 export default App;
+
+
+
+
+
+

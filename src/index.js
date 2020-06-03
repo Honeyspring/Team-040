@@ -1,17 +1,21 @@
-import 'babel-polyfill';
 import React from 'react';
-import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 import ThunkMiddleware from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 import rootReducers from './reducers/rootReducer';
-import App from './app';
+import './index.css';
+import App from './App';
+import "tachyons";
+import 'babel-polyfill';
 import * as serviceWorker from './serviceWorker';
 
 const store = createStore(rootReducers, applyMiddleware(ThunkMiddleware));
-render(
-  <App store={store}/>,
-  document.querySelector('#root')
-);
+const rootElement = document.getElementById("root");
+ReactDOM.render(  <App store={store}/>, rootElement);
 
-// The app work offline and load faster. You can change this to unregister() if you don't want it.
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.register();
+
+
