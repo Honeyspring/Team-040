@@ -1,8 +1,14 @@
 import React from 'react';
-import propTypes from 'prop-types';
+import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { toast } from 'react-toastify';
+import propTypes from 'prop-types';
+/* import Welcome from './Components/Welcome/Welcome';
+first welcome page,switch between  them with this */
+import Welcome from './Components/Welcome/Welcom';
+import SignIn from './Components/Welcome/SignIn';
+import Register from './Components/Welcome/Register';
 
 /**
  * ROUTER APP COMPONENT
@@ -16,8 +22,9 @@ const App = ({ store }) => {
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route exact path="/" component={() => <h1>HOME PAGE</h1>} />
-          <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />
+          <Route path="/signIn" component={SignIn} />
+          <Route path="/Register" component={Register} />
+          <Route path="/Welcome" component={Welcome} />
         </Switch>
       </Router>
     </Provider>
