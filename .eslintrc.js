@@ -1,4 +1,4 @@
-  module.exports = {
+module.exports = {
   parser: 'babel-eslint',
   env: {
     browser: true,
@@ -6,12 +6,11 @@
     node: true,
     jest: true
   },
-  plugins: ['react','prettier'],
+  plugins: ['react', 'prettier'],
   extends: ['airbnb-base/legacy', 'eslint:recommended', 'plugin:react/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
-
   },
   parserOptions: {
     ecmaVersion: 2018,
