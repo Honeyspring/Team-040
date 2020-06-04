@@ -1,13 +1,17 @@
-import app from '../src/index';
+import React from 'react'
+import '@testing-library/jest-dom';
+import { cleanup, render } from '@testing-library/react';
+import App from '../src/app';
 
 describe('app module', () => {
-  test('it exists', async () => {
-    expect(app).toBeDefined();
+  afterEach(cleanup);
+  test('it exists', () => {
+    expect(App).toBeDefined();
   });
 
-  test('it returns program name with SDGs', async () => {
-    const result = await app();
-    const sdgPos = (result || '').indexOf('SDG');
-    expect(sdgPos).toBeGreaterThanOrEqual(0);
+  test.skip('it should render App component', () => {
+    const { getByText } = render(<App />);
+    const element = getByText(/HOME PAGE/);
+    expect(element).toBeInTheDocument();
   });
 });

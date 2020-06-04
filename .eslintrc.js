@@ -7,7 +7,7 @@ module.exports = {
     jest: true
   },
   plugins: ['react', 'prettier'],
-  extends: ['airbnb-base/legacy', 'eslint:recommended', 'plugin:react/recommended'],
+  extends: ['airbnb-base', 'prettier', 'eslint:recommended', 'plugin:react/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
