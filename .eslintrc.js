@@ -6,11 +6,12 @@
     node: true,
     jest: true
   },
-  plugins: ['react'],
-  extends: ['airbnb-base', 'eslint:recommended', 'plugin:react/recommended'],
+  plugins: ['react','prettier'],
+  extends: ['airbnb-base/legacy', 'eslint:recommended', 'plugin:react/recommended'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
+
   },
   parserOptions: {
     ecmaVersion: 2018,

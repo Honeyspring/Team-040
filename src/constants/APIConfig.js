@@ -1,4 +1,6 @@
-/* eslint-disable import/prefer-default-export */
+// eslint-disable-next-line import/prefer-default-export
+
+
 /**
  * Headers for API REQUEST
  * @func HEADERS
@@ -6,7 +8,7 @@
  * @param {string} contentType
  * @returns Headers<object>
  */
-export const HEADERS = (contentType = 'application/json') => new Headers({
+export default (contentType = 'application/json') => new Headers({
   'Content-Type': contentType,
   Accept: 'application/json',
   Authorization: 'Bearer APIKey'

@@ -16,7 +16,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cover": "jest --coverage",
-    "lint": "eslint \"src/**/*.js\"",
+    "lint": "eslint \"src/**/*.js\" --fix",
     "start": "parcel ./src/public/index.html"
   },
   "author": "Build For SDG <buildforsdg@andela.com>",
@@ -34,7 +34,6 @@
     "@testing-library/react": "^10.0.5",
     "@testing-library/user-event": "^10.4.1",
     "babel-polyfill": "^6.26.0",
-    "prettier": "^2.0.5",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-countup": "^4.3.3",
@@ -60,9 +59,11 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.20.0",
     "jest": "^25.4.0",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.0.5"
   },
   "browserslist": [
     "last 1 Chrome versions"
