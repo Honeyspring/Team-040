@@ -1,13 +1,13 @@
 /* eslint-disable class-methods-use-this */
+import 'babel-polyfill';
 import React from 'react';
 import { render, unmountComponentAtNode } from 'react-dom';
 import ThunkMiddleware from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 import rootReducers from './reducers/rootReducer';
-import './index.css';
-import App from './App';
+import App from './app';
 import 'tachyons';
-import 'babel-polyfill';
+import 'react-toastify/dist/ReactToastify.css';
 import * as serviceWorker from './serviceWorker';
 
 /**
