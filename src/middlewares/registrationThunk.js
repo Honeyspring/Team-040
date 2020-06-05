@@ -13,6 +13,7 @@ const registrationThunk = (data, even) => (dispatch) => {
   fetch(`${API_URI}/register`, {
     method: 'POST',
     body: data,
+    mode: 'no-cors',
     headers: HEADERS()
   })
     .then((response) => {
