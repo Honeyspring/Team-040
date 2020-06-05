@@ -28,10 +28,10 @@ class Register extends Component {
 
   async submitRegister(e) {
     e.preventDefault();
-    const { password, confimPassword } = this.state;
+    const { password, confirmPassword } = this.state;
     const even = e.target;
     // eslint-disable-next-line no-unused-expressions
-    password === confimPassword ? await this.props.registerUser(this.state, even) : toast.warn('⚠️ Passwords are not the same.');
+    password === confirmPassword ? await this.props.registerUser(this.state, even) : toast.warn('⚠️ Passwords are not the same.');
   }
 
   render() {
@@ -69,6 +69,7 @@ class Register extends Component {
                       type="email"
                       onChange={this.handleInputChange}
                       name="email"
+                      pattern="^[a-z0-9_-]+@[a-z0-9_-]+\.[a-z]{2,6}$"
                       id="email-address"
                       required
                       placeholder="Your Email"
@@ -101,7 +102,7 @@ class Register extends Component {
                 <input
                   className="ta bg  mv4 w-100 b link ph3 h3 f3 fw6 pv3  input-reset bd b-black shadow-5  grow pointer  dib"
                   type="submit"
-                  value= {this.props.loading ? 'Loading...' : 'REGISTER'}
+                  value={this.props.loading ? 'Loading...' : 'REGISTER'}
                   disabled={this.props.loading}
                 />
               </form>
