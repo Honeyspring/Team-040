@@ -5,8 +5,8 @@ import { toast } from 'react-toastify';
 import propTypes from 'prop-types';
 
 import Welcome from './Components/Welcome/Welcom';
-import SignIn from './Components/SignIn/SignIn';
 import RegisterService from './containers/registerService/registerService';
+import LoginService from './containers/loginService/loginService';
 
 /**
  * ROUTER APP COMPONENT
@@ -21,7 +21,7 @@ const App = ({ store }) => {
       <Router>
         <Switch>
           <Route exact path="/" component={Welcome} />
-          <Route path="/signIn" component={SignIn} />
+          <Route path="/signIn" component={LoginService} />
           <Route path="/register" component={RegisterService} />
           <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />
         </Switch>
