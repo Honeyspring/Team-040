@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import './Welcom.css';
-import naira from '../icons/naira.ico';
-import protect from '../icons/protect.ico';
-import relaxed from '../icons/relaxed.ico';
-import palmScan from '../icons/palmScan.ico';
-import africa from '../icons/africa.ico';
+import naira from '../../assets/icons/naira.ico';
+import protect from '../../assets/icons/protect.ico';
+import relaxed from '../../assets/icons/relaxed.ico';
+import palmScan from '../../assets/icons/palmScan.ico';
+import africa from '../../assets/icons/africa.ico';
 
 const Welcom = () => (
   <div className=" covr  br3 ba  b--black-10  w-100 w-100-m w-100-l  shadow-5 ">
@@ -45,7 +45,7 @@ const Welcom = () => (
         </legend>
         <p className=" b bg-color">
           Voting is done simultaneously and updated live therefore
-          curbing unaccepted votes,double voting and rigging of
+          curbing unaccepted votes, double voting and rigging of
           results{' '}
         </p>
       </article>
@@ -55,16 +55,16 @@ const Welcom = () => (
           COMFORT AND SPEED
         </legend>
         <p className="b  bg-color">
-          At the comfort of your home yourvotes are casted , No long queues,Speedy votes,ease.
+          At the comfort of your home yourvotes are casted, No long queues, Speedy votes, ease.
         </p>
       </article>
       <div className="center  mv4 w-100 w-100-m w-100-l mw6  mw flex flex-column">
         <i className="ta mv1 f4 b bg-color">
           <img src={africa} alt="africa" />
-          Your vote is your voice,use that power!!
+          Your vote is your voice, use that power!!
         </i>
         <Link
-          to="/SignIn"
+          to="/signIn"
           className="ta mv4  center w-50 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black bg-color shadow-5  grow pointer  dib"
         >
           {' '}
