@@ -17,8 +17,16 @@ export const HEADERS = (contentType = 'application/json') => new Headers({
  * @const API_URI
  */
 export const API_URI = 'https://sdg-team-40.herokuapp.com';
+/**
+ * KEY FOR DECODE JWT TOKEN
+ * @const JWT_DECODE_KEY
+ */
+export const JWT_DECODE_KEY = 'myscreteisreal';
 
-
+/**
+ * DICO API CODE ERRORS
+ * @const API_CODE_ERROR
+ */
 export const API_CODE_ERROR = {
   // Client-side error responses
   400: 'Bad Request',
