@@ -8,7 +8,7 @@
  * @param {string} contentType
  * @returns Headers<object>
  */
-export default (contentType = 'application/json') => new Headers({
+export const HEADERS = (contentType = 'application/json') => new Headers({
   'Content-Type': contentType,
   Authorization: 'Bearer APIKey'
 });
