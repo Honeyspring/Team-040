@@ -30,7 +30,7 @@ describe('login actions', () => {
         type: types.SIGN_IN_ERROR,
         loading: false,
         error: 'Error Occured !'
-      })
+      });
     });
   });
   

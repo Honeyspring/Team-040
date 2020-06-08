@@ -1,4 +1,4 @@
-import { API_URI, API_CODE_ERROR, HEADERS } from '../constants/APIConfig';
+import { API_URI, API_CODE_ERROR, header } from '../constants/APIConfig';
 import { loginUser, loginUserSuccess, loginUserFailed } from '../actions/loginAction';
 
 /**
@@ -14,7 +14,7 @@ const loginThunk = (data, redirect) => (dispatch) => {
     method: 'POST',
     body: data,
     mode: 'no-cors',
-    headers: HEADERS()
+    headers: header()
   })
     .then((response) => {
       if (!response.ok) {

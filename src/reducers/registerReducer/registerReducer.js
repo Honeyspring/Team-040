@@ -15,7 +15,7 @@ const registerReducer = (state = initialStore, action = {}) => {
       return {
         ...state,
         loading: action.loading
-      }
+      };
     case types.SIGN_UP_SUCCESS:
       return {
         ...state,
@@ -24,7 +24,7 @@ const registerReducer = (state = initialStore, action = {}) => {
           ...state.success,
           message: action.payload.message
         }
-      }
+      };
     case types.SIGN_UP_ERROR:
       return {
         ...state,
@@ -33,7 +33,7 @@ const registerReducer = (state = initialStore, action = {}) => {
           ...state.error,
           message: action.error
         }
-      }
+      };
   
     default:
       return state;

@@ -3,12 +3,12 @@
 
 /**
  * Headers for API REQUEST
- * @func HEADERS
+ * @func header
  * @desc Headers options to pass at all the request API
  * @param {string} contentType
  * @returns Headers<object>
  */
-export const HEADERS = (contentType = 'application/json') => new Headers({
+export const header = (contentType = 'application/json') => new Headers({
   'Content-Type': contentType,
   Authorization: window.sessionStorage.getItem('token') || ''
 });

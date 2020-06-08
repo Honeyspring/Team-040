@@ -15,12 +15,12 @@ import * as types from '../../constants/loginActionTypes';
         return {
           ...state,
           loading: action.loading
-        }
+        };
       case types.SIGN_IN_SUCCESS:
         return {
           ...state,
           loading: action.loading
-        }
+        };
       case types.SIGN_IN_ERROR:
         return {
           ...state,
@@ -29,7 +29,7 @@ import * as types from '../../constants/loginActionTypes';
             ...state.error,
             message: action.error
           }
-        }
+        };
       default:
         return state;
     }

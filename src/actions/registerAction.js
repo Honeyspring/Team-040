@@ -27,7 +27,7 @@ import * as types from '../constants/registerActionTypes';
    type: types.SIGN_UP_SUCCESS,
    payload: data,
    loading: false
- })
+ });
 
  /**
   * REGISTER USER FAILED
