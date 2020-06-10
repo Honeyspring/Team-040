@@ -32,7 +32,7 @@ describe('register actions', () => {
         type: types.SIGN_UP_ERROR,
         loading: false,
         error: 'Error Occured !'
-      })
+      });
     });
   });
   

@@ -3,22 +3,30 @@
 
 /**
  * Headers for API REQUEST
- * @func HEADERS
+ * @func header
  * @desc Headers options to pass at all the request API
  * @param {string} contentType
  * @returns Headers<object>
  */
-export default (contentType = 'application/json') => new Headers({
+export const header = (contentType = 'application/json') => new Headers({
   'Content-Type': contentType,
-  Authorization: 'Bearer APIKey'
+  Authorization: window.sessionStorage.getItem('token') || ''
 });
 
 /** Domain API
  * @const API_URI
  */
-export const API_URI = 'https://sdg-team-40.herokuapp.com';
+export const API_URI = process.env.API_DOMAIN;
+/**
+ * KEY FOR DECODE JWT TOKEN
+ * @const JWT_DECODE_KEY
+ */
+export const JWT_DECODE_KEY = process.env.KEY;
 
-
+/**
+ * DICO API CODE ERRORS
+ * @const API_CODE_ERROR
+ */
 export const API_CODE_ERROR = {
   // Client-side error responses
   400: 'Bad Request',

@@ -6,8 +6,6 @@ footer {
 
 /* Style the links inside the navigation bar */
 .footer a {
-  text-align: center;
-  color: #009688;
   font-size: 1.25rem;
   text-decoration: none;
 }
@@ -16,6 +14,7 @@ footer {
 .footer a:hover {
   color: black;
 }
+
 .icons {
   max-width: 6%;
   padding: 16px;

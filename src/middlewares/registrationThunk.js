@@ -1,4 +1,4 @@
-import { API_URI, API_CODE_ERROR, HEADERS } from '../constants/APIConfig';
+import { API_URI, API_CODE_ERROR, header } from '../constants/APIConfig';
 import { registerUser, registerUserSuccess, registerUserFailed } from '../actions/registerAction';
 
 /**
@@ -13,7 +13,8 @@ const registrationThunk = (data, even) => (dispatch) => {
   fetch(`${API_URI}/register`, {
     method: 'POST',
     body: data,
-    headers: HEADERS()
+    mode: 'no-cors',
+    headers: header()
   })
     .then((response) => {
       if (!response.ok) {
@@ -28,6 +29,6 @@ const registrationThunk = (data, even) => (dispatch) => {
     .catch((error) => {
       dispatch(registerUserFailed(error.message ? error.message : error));
     });
-}
+};
 
 export default registrationThunk;

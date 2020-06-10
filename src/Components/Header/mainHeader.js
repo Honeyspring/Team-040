@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import logo from '../icons/logo.ico';
-import menu from '../icons/menu.ico';
+import logo from '../assets/icons/logo.ico';
+import menu from '../assets/icons/menu.ico';
 
 
 const Header = () => (
@@ -25,9 +25,9 @@ const Header = () => (
     </div>
 
   <div className="hide-child   ">
-  <div to="/" className="w-15  mt3 hmb fr tr v-mid  p0-ns  dim dark-gray">
+  <Link to="/" className="w-15  mt3 hmb fr tr v-mid  p0-ns link dim dark-gray">
     <img className=' hmb  dim 'src={menu} alt='menu'/>
-  </div>
+  </Link>
 
     <div className="child hmbMenu shadow-5">
     <div className="  dn-l   ">

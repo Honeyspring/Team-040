@@ -4,8 +4,8 @@ import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
 import Header from "../Header/mainHeader";
 import Footer from "../Footer/Footer";
-import one from "../icons/shadowUnity.jpg";
-import two from "../icons/email_32.png";
+import one from "../assets/icons/shadowUnity.jpg";
+import two from "../assets/icons/email_32.png";
 
 class Start extends Component{
   constructor(){

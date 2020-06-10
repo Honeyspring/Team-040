@@ -1,12 +1,19 @@
+.container {
+  flex-wrap: wrap;
+}
+
 .bg-color {
   color: rgb(8, 148, 101);
 }
-
-.covr {
-  background-color: #fff;
+.wlcm article:nth-of-type(1),
+article:nth-of-type(4) {
+  background-color: rgb(6, 56, 39);
+  color: #fff;
 }
-.top {
-  background-color: rgb(8, 148, 101);
+
+.bd {
+  border-style: solid;
+  border-width: 3px;
 }
 .menu:hover,
 .link:active,
@@ -15,51 +22,31 @@
   color: #fff;
   background-color: rgb(8, 148, 101);
 }
-.vote {
-  background-image: url('../icons/paperUnity.jpg'); /*The image used - important! */
-  background-size: cover;
-  position: relative; /* Needed to position the cutout text in the middle of the image */
-  height: 100px;
-  text-align: center;
-}
 
-.mw {
-  max-width: 22rem;
-}
-.text {
-  background-color: #fff;
-  color: #000;
-  font-size: 15vw; /* Responsive font size */
-  font-weight: bold;
-  height: 100px;
-  margin: 0 auto; /* Center the text container */
-  padding: 12px;
-  width: 100%;
-  text-align: center; /* Center text */
-  position: absolute; /* Position text */
-  top: 50%; /* Position text in the middle */
-  left: 50%; /* Position text in the middle */
-  transform: translate(-50%, -50%); /* Position text in the middle */
-  mix-blend-mode: screen; /* This makes the cutout text possible */
-}
-.bd {
-  border-style: solid;
-  border-width: 3px;
-}
-.ta {
-  text-align: center;
+.sign {
+  background-color: rgb(8, 148, 101);
+  color: #fff;
 }
 
 .bg {
   background-color: #fff;
+  color: rgb(8, 148, 101);
 }
+.sign input[type='text'] {
+  background: url(../icons/elections.ico) no-repeat scroll 8px 9px #fff;
+  padding-left: 39px;
+}
+.sign input[type='password'] {
+  background: url(../icons/password.ico) no-repeat scroll 8px 9px #fff;
+  padding-left: 45px;
+}
+.sign input[type='email'] {
+  background: url(../icons/email.ico) no-repeat scroll 8px 9px #fff;
+  padding-left: 45px;
+}
+
 @media screen and (min-width: 480px) {
   .mw {
-    max-width: 36rem;
-  }
-  .text,
-  .vote {
-    height: 150px;
-    font-size: 5vw;
+    max-width: 32rem;
   }
 }

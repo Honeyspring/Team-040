@@ -1,11 +1,14 @@
 import React from 'react';
 import './Footer.css';
-import facebook from '../icons/facebook.ico';
-import github from '../icons/github.ico';
+import facebook from '../../assets/icons/facebook.ico';
+import github from '../../assets/icons/github.ico';
 
 
 const Footer = () => (
-        <footer className="footer" id="footer">
+  <footer className="footer" id="footer">
+    <a className=" dim" target="blank" href="https://www.facebook.com/groups/249164319589395/">
+      <img className="icons" src={facebook} alt="facebook" />
+    </a>
 
             <a className=' dim' href="https://www.facebook.com/groups/249164319589395/"><img className="mw2" src={facebook} alt='facebook'/></a>
 

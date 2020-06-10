@@ -1,14 +1,12 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import logo from '../icons/logo.ico';
+import logo from '../../assets/icons/logo.ico';
 
 
 const Header = () => (
         // <!--Top bar --->
         // TODO:tobar to contain menu nd hamburger icons on all other pages after signned in
-
-
         <nav className="dt  dt--fixed w-100 border-box pa3 ph5-ns bb b--black-10 ">
   <div className="dtc dn-ns w-third"></div>
 
