@@ -21,7 +21,9 @@ class SignIn extends Component {
     this.setState({ [event.target.name]: event.target.value });
   }
 
-  // Todo:once authenticated submit button lead to index
+  /* Todo:once authenticated submit button lead to index
+  else all privates routes redirects back to welcome page */
+
   submitLogin(event) {
     event.preventDefault();
     window.location = '/';
@@ -61,7 +63,7 @@ class SignIn extends Component {
               </fieldset>
 
               <input
-                className="ta bg  mv4 w-100 b link ph3 h3 f3 fw6 pv3  input-reset bd b-black shadow-5  grow pointer  dib"
+                className="tc bg  mv4 w-100 b link ph3 h3 f3 fw6 pv3  input-reset bd b-black shadow-5  grow pointer  dib"
                 onClick={this.submitLogin}
                 type="submit"
                 value="LOGIN"
@@ -70,12 +72,12 @@ class SignIn extends Component {
               <div className="lh-copy mt3">
                 <p className=" flex">
                   <i className="f6 b white pa2 flex-column w-75">Don&lsquo;t have an Acccount?</i>
-                  <Link to="/Register" className="f3 pa1 fw6 link dim blac flex-column w-25 ">
+                  <Link to="/Register" className="f3 btn pa1 fw6 link dim blac flex-column w-25 ">
                     Register
                   </Link>
                 </p>
 
-                <a href="#0" className="fw6 f4 b w-100 link dim  ta ">
+                <a href="#0" className="fw6 f4 b w-100 link dim  c ">
                   <i>Forgot password?</i>
                 </a>
               </div>

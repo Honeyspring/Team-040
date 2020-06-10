@@ -8,6 +8,13 @@
 .top {
   background-color: rgb(8, 148, 101);
 }
+.menu:hover,
+.link:active,
+.btn:hover {
+  transition: color 0.15s ease-in;
+  color: #fff;
+  background-color: rgb(8, 148, 101);
+}
 .vote {
   background-image: url('../icons/paperUnity.jpg'); /*The image used - important! */
   background-size: cover;
@@ -41,11 +48,6 @@
 }
 .ta {
   text-align: center;
-}
-.link:hover {
-  transition: color 0.15s ease-in;
-  color: #fff;
-  background-color: rgb(8, 148, 101);
 }
 
 .bg {

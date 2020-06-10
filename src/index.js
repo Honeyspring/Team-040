@@ -5,7 +5,7 @@ import ThunkMiddleware from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 import rootReducers from './reducers/rootReducer';
 import './index.css';
-import App from './App';
+import App from './app';
 import 'tachyons';
 import 'babel-polyfill';
 import * as serviceWorker from './serviceWorker';
