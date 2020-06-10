@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { toast }  from 'react-toastify';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import '../Welcome/Welcom.css';
+import '../Welcome/Welcome.css';
 
 class SignIn extends Component {
   constructor(props) {
@@ -70,7 +70,7 @@ class SignIn extends Component {
                 </fieldset>
 
                 <input
-                  className="ta bg  mv4 w-100 b link ph3 h3 f3 fw6 pv3  input-reset bd b-black shadow-5  grow pointer  dib"
+                  className="tc bg  mv4 w-100 b link ph3 h3 f3 fw6 pv3  input-reset bd b-black shadow-5  grow pointer  dib"
                   type="submit"
                   value={this.props.loading ? 'Loading...' : 'LOGIN'}
                   disabled={this.props.loading}

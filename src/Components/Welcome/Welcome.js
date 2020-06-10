@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
-import './Welcom.css';
+import './Welcome.css';
 import naira from '../../assets/icons/naira.ico';
 import protect from '../../assets/icons/protect.ico';
 import relaxed from '../../assets/icons/relaxed.ico';
@@ -13,8 +13,7 @@ import africa from '../../assets/icons/africa.ico';
 const Welcom = () => (
   <div className=" covr  br3 ba  b--black-10  w-100 w-100-m w-100-l  shadow-5 ">
     <Header />
-    <div className="flex    mt2 container w-100 w-100 w-100-l">
-      <h3 className="w-100 ta f2  bg-color center">E-VOTING</h3>
+    <div className="flex  wlcm  mt2 container w-100 w-100 w-100-l">
       <article className=" br3 ba  bg-color  mw  b--black-10 mv4 w-50 w-50-l  shadow-5 center flex flex-column">
         <legend className="f4  ph2 fw6 mh0">
           <img src={protect} alt="secured" />
@@ -59,13 +58,13 @@ const Welcom = () => (
         </p>
       </article>
       <div className="center  mv4 w-100 w-100-m w-100-l mw6  mw flex flex-column">
-        <i className="ta mv1 f4 b bg-color">
+        <i className="tc mv1 f4 b bg-color">
           <img src={africa} alt="africa" />
           Your vote is your voice, use that power!!
         </i>
         <Link
-          to="/signIn"
-          className="ta mv4  center w-50 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black bg-color shadow-5  grow pointer  dib"
+          to="/SignIn"
+          className="tc mv4  btn center w-50 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black bg-color shadow-5  grow pointer  dib"
         >
           {' '}
           VOTE NOW{' '}

@@ -100,7 +100,7 @@ class Register extends Component {
                 </fieldset>
 
                 <input
-                  className="ta bg  mv4 w-100 b link ph3 h3 f3 fw6 pv3  input-reset bd b-black shadow-5  grow pointer  dib"
+                  className="tc bg  mv4 w-100 b link ph3 h3 f3 fw6 pv3  input-reset bd b-black shadow-5  grow pointer  dib"
                   type="submit"
                   value={this.props.loading ? 'Loading...' : 'REGISTER'}
                   disabled={this.props.loading}
@@ -125,7 +125,7 @@ class Register extends Component {
 }
 
 Register.propTypes = {
-  history: PropTypes.object.isRequired, // Object to contains push props to navigate on application like this: this.history.push('path')
+  history: PropTypes.object.isRequired, // Object to concins push props to navigate on application like this: this.history.push('path')
   location: PropTypes.object.isRequired, // object contains location on URL: pathname, search, key, hash
   match: PropTypes.object.isRequired, // object contains all the information on URL: path, url, params...
   error: PropTypes.object.isRequired, // props come to state, contains props message: error.message. Notice: Visit containers/registerService/registerService.js for more details.
