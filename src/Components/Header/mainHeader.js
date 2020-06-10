@@ -1,8 +1,8 @@
 import React from 'react';
 import './Header.css';
 import { Link } from 'react-router-dom';
-import logo from '../assets/icons/logo.ico';
-import menu from '../assets/icons/menu.ico';
+import logo from '../../assets/icons/logo.ico';
+import menu from '../../assets/icons/menu.ico';
 
 
 const Header = () => (

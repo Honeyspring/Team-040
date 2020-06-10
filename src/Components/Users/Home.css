@@ -13,7 +13,7 @@
   background-color: rgb(63, 150, 117);
 }
 .search input[type='text'] {
-  background: url(../icons/search_32.png) no-repeat scroll 8px 9px #fff;
+  background: url(../../assets/icons/search_32.png) no-repeat scroll 8px 9px #fff;
   padding-left: 39px;
 
   border: 1px darkgray;
