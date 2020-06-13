@@ -29,7 +29,7 @@ const registrationThunk = (data, even) => (dispatch) => {
       even.reset();
       dispatch(registerUserSuccess(response.data.data));
     }else{
-      dispatch(registerUserFailed(response.data))
+      dispatch(registerUserFailed(response.data));
     }
   })
   .catch((error) => {

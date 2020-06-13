@@ -30,7 +30,7 @@ const contestantThunk = () => (dispacth) => {
         dispacth(getContestantsFailed(error.message ? error.message : API_CODE_ERROR[error.status]));
         break;
     }
-  })
+  });
 };
 
 export default contestantThunk;

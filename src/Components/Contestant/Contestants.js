@@ -23,7 +23,7 @@ class Contestants extends Component{
     }
 
     async componentDidMount() {
-      await this.props.getContestants()
+      await this.props.getContestants();
     }
 
   // eslint-disable-next-line class-methods-use-this

@@ -50,8 +50,8 @@ p {
   margin-top: 5em;
 }
 
-.hmbMenu .link:hover:not(.active),
-.hmbMenu .link:active {
+.hmbMenu .link:active,
+.hmbMenu .link:hover:not(.active) {
   color: #fff;
   background-color: rgb(8, 148, 101);
 }
