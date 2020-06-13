@@ -3,34 +3,32 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { toast } from 'react-toastify';
 import propTypes from 'prop-types';
+import ProtectedRoute from './helpers/ProtectedRoute/ProtectedRoute';
 import Welcome from './Components/Welcome/Welcome';
-import SignIn from './Components/Welcome/SignIn';
-import Register from './Components/Welcome/Register';
-import Start from './Components/Users/Start';
-import Home from './Components/Users/Home';
-import Contestants from './Components/Users/Contestants';
+import Start from './Components/Start/Start';
+import Home from './Components/Home/Home';
 import RegisterService from './containers/registerService/registerService';
 import LoginService from './containers/loginService/loginService';
+import ContestantService from './containers/contestantService/contestantService';
+
 
 /**
  * ROUTER APP COMPONENT
  * @func App
  * @prop store
+ * @description contains all the routes (secure and unsecure) of the app
+ * @returns component<Component>
  */
-// all privates routes redirects back to welcome page
 const App = ({ store }) => {
   toast.configure({position: 'top-right', hideProgressBar: true}); // Init the toast notification in Application globaly
   return (
     <Provider store={store}>
       <Router>
         <Switch>
-{/* the root route is home but would be a private route and anyone not signed in is redirected to welcome route */}
-          <Route exact path="/" component={Home} />
-          <Route path="/signIn" component={SignIn} />
-          <Route path="/register" component={Register} />
-          <Route path="/welcome" component={Welcome} />
-          <Route path="/how_it_works" component={Start} />
-          <Route path="/contestants" component={Contestants} />
+          <Route exact path="/" component={Welcome} />
+          <ProtectedRoute path="/home" component={Home} />
+          <ProtectedRoute path="/how_it_works" component={Start} />
+          <ProtectedRoute path="/contestants" component={ContestantService} />
           <Route path="/signIn" component={LoginService} />
           <Route path="/register" component={RegisterService} />
           <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />
