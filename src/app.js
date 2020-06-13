@@ -9,6 +9,7 @@ import Register from './Components/Welcome/Register';
 import Start from './Components/Users/Start';
 import Home from './Components/Users/Home';
 import Contestants from './Components/Users/Contestants';
+import Ballots from './Components/Votes/voteChoice';
 import RegisterService from './containers/registerService/registerService';
 import LoginService from './containers/loginService/loginService';
 
@@ -31,6 +32,7 @@ const App = ({ store }) => {
           <Route path="/welcome" component={Welcome} />
           <Route path="/how_it_works" component={Start} />
           <Route path="/contestants" component={Contestants} />
+          <Route path="/ballots" component={Ballots} />
           <Route path="/signIn" component={LoginService} />
           <Route path="/register" component={RegisterService} />
           <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />

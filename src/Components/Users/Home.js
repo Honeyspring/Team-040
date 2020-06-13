@@ -15,7 +15,7 @@ class Home extends Component{
     }
 
     this.modal = React.createRef();
-    this.choicePresidential=this.choicePresidential.bind(this);
+    this.choiceDistrict=this.choiceDistrict.bind(this);
   }
 
 
@@ -31,7 +31,7 @@ close=()=> {
 }
 
 // ToDo:to be repeated for each subCategories
-choicePresidential=()=>{
+choiceDistrict=()=>{
   this.setState({serialNum:1},()=>{
       // TODO:Get ALL contestants in this category and update state
       this.open();
@@ -51,7 +51,7 @@ choicePresidential=()=>{
       <h6 className="w-100 tc f3 f5-ns mt0 dark-gray center">Voting Categories</h6>
       <article className="w-100 w-100-l  center flex " >
 
-      <article className="  ba  bg-color  mw  b--black-10 mv4 w-25 w-25-l  shadow-5 center flex flex-column" onClick={this.choicePresidential}>
+      <article className="  ba  bg-color  mw  b--black-10 mv4 w-25 w-25-l  shadow-5 center flex flex-column" onClick={this.choiceDistrict}>
       <p>WARD/DISTRICT ELECTION </p>
          </article>
         <article className="  ba  bg-color  mw  b--black-10 mv4 w-25 w-25-l  shadow-5 center flex flex-column" >
