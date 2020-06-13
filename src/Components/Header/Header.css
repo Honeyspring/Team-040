@@ -13,18 +13,22 @@ p {
   text-decoration: none;
   color: #fff;
 }
+
 .menu,
 .hmb {
   display: inline-block;
 }
+
 .menu:hover,
 .menu:active {
   background-color: rgb(8, 148, 101);
   color: #fff;
 }
+
 .main {
   right: 2em;
 }
+
 .hmb:active,
 .hmb:hover {
   background-color: transparent;
@@ -41,14 +45,17 @@ p {
   z-index: 1;
   overflow-x: hidden;
 }
+
 .child {
   margin-top: 5em;
 }
+
 .hmbMenu .link:hover:not(.active),
 .hmbMenu .link:active {
   color: #fff;
   background-color: rgb(8, 148, 101);
 }
+
 @media screen and (max-width: 600px) {
   .main {
     display: none;
