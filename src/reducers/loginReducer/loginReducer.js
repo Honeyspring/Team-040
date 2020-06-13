@@ -19,7 +19,11 @@ import * as types from '../../constants/loginActionTypes';
       case types.SIGN_IN_SUCCESS:
         return {
           ...state,
-          loading: action.loading
+          loading: action.loading,
+          userProfile: {
+            ...state.userProfile,
+            userId: action.payload.userId
+          }
         };
       case types.SIGN_IN_ERROR:
         return {
