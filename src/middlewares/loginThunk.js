@@ -1,4 +1,5 @@
-import { API_URI, API_CODE_ERROR, header } from '../constants/APIConfig';
+import axios from 'axios';
+import { header } from '../constants/APIConfig';
 import { loginUser, loginUserSuccess, loginUserFailed } from '../actions/loginAction';
 
 /**
@@ -10,26 +11,22 @@ import { loginUser, loginUserSuccess, loginUserFailed } from '../actions/loginAc
  */
 const loginThunk = (data, redirect) => (dispatch) => {
   dispatch(loginUser());
-  fetch(`${API_URI}/login`, {
-    method: 'POST',
-    body: data,
-    mode: 'no-cors',
+  axios({
+    method: 'post',
+    data,
+    url: `/api/login`,
     headers: header()
   })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(response.status ? API_CODE_ERROR[response.status] : 'ERROR OCCURED !');
-      }
-      return response.json();
-    })
-    .then((res) => {
-      redirect.push('/');
-      window.sessionStorage.setItem('token', res.data.token); // set token in session storage. we decode it with jwt-decode module.
-      dispatch(loginUserSuccess(res.data));
-    })
-    .catch((error) => {
-      dispatch(loginUserFailed(error.message ? error.message : error));
-    });
+  .then((response) => {
+    if (response.data.data.token) {
+      document.cookie = `token=${response.data.data.token}; path=/; max-age=86400; samesite=strict`; // set token in cookie. we decode it with jwt-decode module.
+      dispatch(loginUserSuccess(response.data.data));
+      redirect.push('/home');
+    }
+  })
+  .catch((error) => {
+    dispatch(loginUserFailed(error.message === 'Request failed with status code 401' ? 'Incorrect password!' : error.message));
+  });
 };
 
 export default loginThunk;
