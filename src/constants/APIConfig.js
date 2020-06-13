@@ -1,16 +1,22 @@
 // eslint-disable-next-line import/prefer-default-export
 
+/**
+ * REGEX FOR TOKEN
+ * @const TOKEN
+ */
+export const TOKEN = /^[A-Za-z0-9-_=]+\.[A-Za-z0-9-_=]+\.?[A-Za-z0-9-_.+/=]*$/;
 
 /**
  * Headers for API REQUEST
  * @func header
  * @desc Headers options to pass at all the request API
  * @param {string} contentType
- * @returns Headers<object>
+ * @returns object
  */
-export const header = (contentType = 'application/json') => new Headers({
-  'Content-Type': contentType,
-  Authorization: window.sessionStorage.getItem('token') || ''
+export const header = (contentType = 'application/x-www-form-urlencoded') => ({
+  'content-type': contentType,
+  'cache-control': 'no-cache',
+  'authorization': TOKEN.test(document.cookie) ? document.cookie.replace('token=', 'token ') : ''
 });
 
 /** Domain API
@@ -22,6 +28,7 @@ export const API_URI = process.env.API_DOMAIN;
  * @const JWT_DECODE_KEY
  */
 export const JWT_DECODE_KEY = process.env.KEY;
+
 
 /**
  * DICO API CODE ERRORS
