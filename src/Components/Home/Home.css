@@ -12,19 +12,20 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(63, 150, 117);
 }
+
 .search input[type='text'] {
   background: url(../../assets/icons/search_32.png) no-repeat scroll 8px 9px #fff;
   padding-left: 39px;
-
   border: 1px darkgray;
 }
+
 select {
   border: none;
   height: 3em;
 }
 
 p {
-  color: #333333;
+  color: #333;
 }
 
 /* Modal Content */
@@ -34,7 +35,7 @@ p {
 
 /* The Close Button */
 .close {
-  color: #aaaaaa;
+  color: #aaa;
   float: right;
   font-size: 38px;
   font-weight: bold;
@@ -47,6 +48,7 @@ p {
   text-decoration: none;
   cursor: pointer;
 }
+
 .cf article {
   max-width: 33em;
   margin-left: 2em;

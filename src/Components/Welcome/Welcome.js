@@ -12,7 +12,7 @@ import africa from '../../assets/icons/africa.ico';
 
 const Welcom = () => (
   <div className=" covr  br3 ba  b--black-10  w-100 w-100-m w-100-l  shadow-5 ">
-    <Header />
+    <Header location='/' />
     <div className="flex  wlcm  mt2 container w-100 w-100 w-100-l">
       <article className=" br3 ba  bg-color  mw  b--black-10 mv4 w-50 w-50-l  shadow-5 center flex flex-column">
         <legend className="f4  ph2 fw6 mh0">
@@ -63,7 +63,7 @@ const Welcom = () => (
           Your vote is your voice, use that power!!
         </i>
         <Link
-          to="/SignIn"
+          to="/signIn"
           className="tc mv4  btn center w-50 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black bg-color shadow-5  grow pointer  dib"
         >
           {' '}

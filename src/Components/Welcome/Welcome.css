@@ -5,8 +5,9 @@
 .bg-color {
   color: rgb(8, 148, 101);
 }
+
 .wlcm article:nth-of-type(1),
-article:nth-of-type(4) {
+.wlcm article:nth-of-type(4) {
   background-color: rgb(6, 56, 39);
   color: #fff;
 }
@@ -15,6 +16,7 @@ article:nth-of-type(4) {
   border-style: solid;
   border-width: 3px;
 }
+
 .menu:hover,
 .link:active,
 .btn:hover {
@@ -32,14 +34,17 @@ article:nth-of-type(4) {
   background-color: #fff;
   color: rgb(8, 148, 101);
 }
+
 .sign input[type='text'] {
   background: url(../../assets/icons/elections.ico) no-repeat scroll 8px 9px #fff;
   padding-left: 39px;
 }
+
 .sign input[type='password'] {
   background: url(../../assets/icons/password.ico) no-repeat scroll 8px 9px #fff;
   padding-left: 45px;
 }
+
 .sign input[type='email'] {
   background: url(../../assets/icons/email.ico) no-repeat scroll 8px 9px #fff;
   padding-left: 45px;

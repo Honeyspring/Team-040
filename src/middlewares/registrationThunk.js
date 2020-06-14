@@ -1,4 +1,5 @@
-import { API_URI, API_CODE_ERROR, header } from '../constants/APIConfig';
+import axios from 'axios';
+import { header } from '../constants/APIConfig';
 import { registerUser, registerUserSuccess, registerUserFailed } from '../actions/registerAction';
 
 /**
@@ -10,25 +11,30 @@ import { registerUser, registerUserSuccess, registerUserFailed } from '../action
  */
 const registrationThunk = (data, even) => (dispatch) => {
   dispatch(registerUser());
-  fetch(`${API_URI}/register`, {
-    method: 'POST',
-    body: data,
-    mode: 'no-cors',
+  delete data.confirmPassword;
+  data.gender = '';
+  data.state_of_origin = '';
+  data.phone_number = '';
+  data.local_govt = '';
+  data.firstname = '';
+  data.lastname = '';
+  axios({
+    method: 'post',
+    data,
+    url: `/api/register`,
     headers: header()
   })
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error(response.status ? API_CODE_ERROR[response.status] : 'ERROR OCCURED !');
-      }
-      return response.json();
-    })
-    .then((res) => {
+  .then((response) => {
+    if(response.data.data) {
       even.reset();
-      dispatch(registerUserSuccess(res.data));
-    })
-    .catch((error) => {
-      dispatch(registerUserFailed(error.message ? error.message : error));
-    });
+      dispatch(registerUserSuccess(response.data.data));
+    }else{
+      dispatch(registerUserFailed(response.data));
+    }
+  })
+  .catch((error) => {
+    dispatch(registerUserFailed(error.message ? error.message : error));
+  });
 };
 
 export default registrationThunk;

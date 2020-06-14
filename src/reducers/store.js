@@ -7,19 +7,18 @@
 export const initialStore = {
   userProfile: {
     userId: 0,
-    firstName: '',
-    lastName: '',
+    fullname: '',
     email: '',
     gender: '',
-    password: '',
     phoneNumber: '',
     stateOfOrigin: '',
     localGovt: '',
-    profilePicture: '',
-    regTime: new Date(),
-    votersRegNum: []
+    vin: ''
   },
+  users: [],
   contestants: [],
+  contestantsByParty: [],
+  contestantsByCategory: [],
   votingCategorie: [],
   usersVotes: [],
   resultsVote: {
