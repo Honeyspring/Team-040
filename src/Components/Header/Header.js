@@ -17,9 +17,9 @@ const Header = (props) => (
 
     <div className="static-ns  main absolute left-0 mt5 mt0-ns  dtc-ns v-mid w-100 w-75-ns h-80 tr">
 
-      <Link className="link dim  menu bg-color tc tl-ns f3 f5-ns main dib-ns pv1 mr0 mr4-ns" to="/how_it_works" title="How It Works">How It Works</Link>
-      <Link className="link dim menu bg-color tc tl-ns f3 f5-ns main dib-ns pv1 mr0 mr4-ns" to="/about" title="About">About</Link>
-      <Link className="link dim menu bg-color tc tl-ns f3 f5-ns main dib-ns pv1 mr0" to="/contact" title="Contact">Contact</Link>
+      <Link className="link dim  menu dark-gray tc tl-ns f3 f5-ns main dib-ns pv1 mr0 mr4-ns" to="/how_it_works" title="How It Works">How It Works</Link>
+      <Link className="link dim menu dark-gray tc tl-ns f3 f5-ns main dib-ns pv1 mr0 mr4-ns" to="/about" title="About">About</Link>
+      <Link className="link dim menu dark-gray tc tl-ns f3 f5-ns main dib-ns pv1 mr0" to="/contact" title="Contact">Contact</Link>
       {props.location === '/signIn' && <Link className="link dim bd menu bg-color tc tl-ns f3 f5-ns main dib-ns pv1 mr0" to="/signIn" title="Sign IN">Sign IN</Link>}
       {props.location === '/register' && <Link className="link dim bd menu bg-color tc tl-ns f3 f5-ns main dib-ns pv1 mr0" to="/register" title="Register">Register</Link>}
     </div>

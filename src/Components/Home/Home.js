@@ -79,7 +79,7 @@ choicePresidential(){
                 &times;
               </span>
               <legend className="f3 fw6 ph0 dark-gray center  mh0">subcategory name</legend>
-              <div className="modal-content pa4 flex flex-column w-100 w-100-m w-100-l " ref={this.modal} id="modal">
+              <div className="modal-content pa4 flex flex-column w-100 w-100-m w-100-l " ref={this.modalContent} id="modal">
                 <div className="overflow-auto">
                   <table className="f6 w-100 mw8 center" cellSpacing="0">
                     <thead>
