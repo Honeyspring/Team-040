@@ -73,7 +73,7 @@ class Register extends Component {
                       type="email"
                       onChange={this.handleInputChange}
                       name="email"
-                      pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}$"
+                      pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-z]{2,4})$"
                       id="email-address"
                       required
                       placeholder="Your Email"

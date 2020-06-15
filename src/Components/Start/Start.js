@@ -2,10 +2,12 @@ import React, {Component} from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import { Link } from 'react-router-dom';
-import Header from "../Header/mainHeader";
+import Header from "../Header/Header";
+import MainHeader from '../Header/mainHeader';
 import Footer from "../Footer/Footer";
 import one from "../../assets/icons/shadowUnity.jpg";
 import two from "../../assets/icons/email_32.png";
+import { TOKEN } from '../../constants/APIConfig';
 
 class Start extends Component{
   constructor(){
@@ -19,7 +21,7 @@ class Start extends Component{
     return (
       <div>
         <div className=" mt2  w-100 w-100-m w-100-l  ">
-          <Header />
+          {TOKEN.test(document.cookie) ? <MainHeader /> : <Header location="/how_it_works" />}
           <div className="flex  container w-100 w-100 w-100-l">
             <h6 className="w-100 tc f3 f5-ns mt0  dark-gray center">Take The short tour </h6>
             <article className=" br3 ba  bg-color  mw  b--black-10 mv4 w-100 w-50-m w-50-l  shadow-5 center flex flex-column">

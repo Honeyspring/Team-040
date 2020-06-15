@@ -1,6 +1,7 @@
 .circles img{
   max-width: 12rem;
 }
+
 /* The Modal (background) */
 .ballot {
   display: none; /* Hidden by default */
@@ -15,6 +16,7 @@
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(63, 150, 117);
 }
+
 /* Modal Content */
 .ballot-content {
   mix-blend-mode: overlay;
