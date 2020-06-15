@@ -27,14 +27,13 @@ const contestantReducer = (state = initialStore, action = {}) => {
     case types.GET_ALL_CONTESTANT_BY_PARTY:
       return {
         ...state,
-        contestantsByParty:[...state.contestantsByParty, ...state.contestants.filter((item) => item.party === action.party)]
+        contestantsByParty:[...state.contestants.filter((item) => item.party === action.party)]
       };
     case types.GET_ALL_CONTESTANT_BY_CATEGORY:
       return {
         ...state,
         contestantsByCategory: [
-          ...state.contestantsByCategory,
-          ...state.contestantsByCategory.filter((item) => item.id === action.category)
+          ...state.contestants.filter((item) => item.id === action.category)
         ]
       };
     default:
