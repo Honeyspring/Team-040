@@ -7,6 +7,8 @@ import ProtectedRoute from './helpers/ProtectedRoute/ProtectedRoute';
 import Welcome from './Components/Welcome/Welcome';
 import Start from './Components/Start/Start';
 import Home from './Components/Home/Home';
+import Update from './Components/Profile/Update';
+import Profile from './Components/Profile/Profile';
 import Vote from './Components/Votes/Vote';
 import Ballot from './Components/Ballot/Ballot';
 import RegisterService from './containers/registerService/registerService';
@@ -33,6 +35,8 @@ const App = ({ store }) => {
           <ProtectedRoute path="/contestants" component={ContestantService} />
           <ProtectedRoute path="/vote" component={Vote} />
           <ProtectedRoute path="/ballot" component={Ballot} />
+          <Route path="/profile_update" component={Update} />
+          <Route path="/profile" component={Profile} />
           <Route path="/signIn" component={LoginService} />
           <Route path="/register" component={RegisterService} />
           <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />
