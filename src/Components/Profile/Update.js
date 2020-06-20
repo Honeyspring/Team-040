@@ -43,7 +43,7 @@ update=()=>{
                     
                     />
                     <input
-                      className="tc   btn center w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black  shadow-5  grow pointer  dib"
+                      className="tc mv4  btn center w-50 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset ba b-white  shadow-5  grow pointer  dib"
                       type="button"
                       onClick={this.fileUpload}
                       name="fileUpload"

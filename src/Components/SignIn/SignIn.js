@@ -42,7 +42,7 @@ class SignIn extends Component {
       return (
         <div className=" covr  br3 ba  b--black-10  w-100 w-100-m w-100-l  shadow-5 ">
           <Header location="/register" />
-          <article className="sign  center br3 ba  b--black-10 mv4 w-100 w-50-m w-50-l m6  shadow-5  ">
+          <article className="sign mw  center br3 ba  b--black-10 mv4 w-100 w-50-m w-50-l m6  shadow-5  ">
             <main className="pa4 ">
               <div className="measure centre">
                 <form onSubmit={this.submitLogin}>
@@ -107,8 +107,8 @@ SignIn.propTypes = {
   location: PropTypes.object.isRequired, // object contains location on URL: pathname, search, key, hash
   match: PropTypes.object.isRequired, // object contains all the information on URL: path, url, params...
   error: PropTypes.object.isRequired, // props come to state, contains props message: error.message. Notice: Visit containers/loginService/loginService.js for more details.
-  loading: PropTypes.bool.isRequired, // props come to state, indiquely if app is loading. Notice: Visit containers/loginService/loginService.js for more details.
-  loginUser: PropTypes.func.isRequired // dispatch function come to redux, he takes data (to register user) and even in parameters
+  loading: PropTypes.bool.isRequired, // props come to state, indicates if app is loading. Notice: Visit containers/loginService/loginService.js for more details.
+  loginUser: PropTypes.func.isRequired // dispatch function come to redux,  takes data (to register user) and even in parameters
 };
 
 export default SignIn;

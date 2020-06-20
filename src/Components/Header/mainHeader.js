@@ -16,7 +16,7 @@ const Header = () => (
         <Link className="link menu   dark-gray tc tr-ns tl-ns f3 f5-ns  pv1 mr0 " to="/home" title="Home">Home</Link>
           <Link className="link menu   dark-gray tc  tl-ns f3 f5-ns  pv1 mr0 " to="/contestants" title="Contestants">Contestants</Link>
           <Link className="link menu   dark-gray tc  tl-ns f3 f5-ns  pv1 mr0 " to="/vote" title="Vote">Vote</Link>
-          <Link className="link menu   dark-gray tc  tl-ns f3 f5-ns  pv1 mr0 " to="/contestants" title="Results">Results</Link>
+          <Link className="link menu   dark-gray tc  tl-ns f3 f5-ns  pv1 mr0 " to="/results" title="Results">Results</Link>
           <Link className="link menu   dark-gray tc  tl-ns f3 f5-ns  pv1 mr0 " to="/about" title="About">About</Link>
         <Link className="link  menu  dark-gray tc  tl-ns f3 f5-ns  pv1 mr2 " to="/contact" title="Contact">Contact</Link>
       </div>
