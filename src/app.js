@@ -6,6 +6,7 @@ import propTypes from 'prop-types';
 import ProtectedRoute from './helpers/ProtectedRoute/ProtectedRoute';
 import Welcome from './Components/Welcome/Welcome';
 import Start from './Components/Start/Start';
+import Loader from './Components/Loader/Loader';
 import Home from './Components/Home/Home';
 import Update from './Components/Profile/Update';
 import Profile from './Components/Profile/Profile';
@@ -38,6 +39,7 @@ const App = ({ store }) => {
           <Route path="/ballot" component={Ballot} />
           <Route path="/profile_update" component={Update} />
           <Route path="/about" component={About} />
+          <Route path="/loader" component={Loader} />
           <Route path="/profile" component={Profile} />
           <Route path="/signIn" component={LoginService} />
           <Route path="/register" component={RegisterService} />
