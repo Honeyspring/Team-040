@@ -8,7 +8,7 @@ import SignIn from '../../Components/SignIn/SignIn';
  * MAP DISPATCH TO PROPS
  * @func mapDispatchToProps
  * @param {function} dispatch
- * @description Map dispatch to props set props on props component who is connected him and received actions should come from component to dispatch
+ * @description Map dispatch to props set props on props component that is connected  and received actions should come from component to dispatch
  * @returns object<Function>
  */
 const mapDispatchToProps = (dispatch) => ({
@@ -19,7 +19,7 @@ const mapDispatchToProps = (dispatch) => ({
  * MAP STATE TO PROPS
  * @func mapStateToProps
  * @param {object} state
- * @description Map state to props pass necessary props to component who is connected him
+ * @description Map state to props pass necessary props to component which is connected to it
  * @returns object
  */
 const mapStateToProps = (state) => ({

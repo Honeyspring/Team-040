@@ -46,7 +46,7 @@ choicePresidential(){
         <div className=" covr mt2 w-100 w-100-m w-100-l   ">
           <Header />
           <div className="flex    container w-100 w-100 w-100-l">
-            <h6 className="w-100 tc f3 f5-ns mt0 dark-gray center">Voting Categories</h6>
+            <h6 className="w-100 tc f3 b f5-ns mt0 bg-color center">Voting Categories</h6>
             <article className="w-100 w-100-l  center flex ">
               <article
                 className="  ba  bg-color  mw  b--black-10 mv4 w-25 w-25-l  shadow-5 center flex flex-column"

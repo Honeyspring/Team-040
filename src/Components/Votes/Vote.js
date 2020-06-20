@@ -45,51 +45,51 @@ class Vote extends Component {
         <div className=" covr mt2 w-100 w-100-m w-100-l   ">
           <Header />
           <div className="flex container w-100 w-100 w-100-l">
-            <h6 className="w-100 tc f3 f5-ns mt0 dark-gray center">CAST YOUR VOTES!!!</h6>
+            <h6 className="w-100 tc f3 f5-ns mt0 bg-color center">CAST YOUR VOTES!!!</h6>
             <article className="w-100 w-100-l  center ">
               {/* todo: ONCE USER votes for a category the card is hidden and only other categories r left */}
               <article className="  ba    mw8  b--black-10 mv4 w-100 w-100-l  shadow-5 center ">
-                <p className="fl bg-color  tc w-70">WARD/DISTRICT ELECTION </p>
+                <p className="fl   tc w-70">WARD/DISTRICT ELECTION </p>
                 <input
                   type="button"
-                  className=" tc mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black dark-gray shadow-5  grow pointer  dib"
+                  className="tc bd mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd  shadow-5  grow pointer  dib"
                   value="VOTE"
                   onClick={this.choiceDistrict}
                 />
               </article>
               <article className="  ba    mw8  b--black-10 mv4 w-100 w-100-l  shadow-5 center ">
-                <p className="fl bg-color tc w-70">LOCAL GOVERNMENT ELECTION </p>
+                <p className="fl  tc w-70">LOCAL GOVERNMENT ELECTION </p>
                 <input
                   type="button"
-                  className=" tc mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black dark-gray shadow-5  grow pointer  dib"
+                  className=" tc bd bg-color mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd  shadow-5  grow pointer  dib"
                   value="VOTE"
                   onClick={this.choiceLocalGov}
                 />
               </article>
               <article className="  ba    mw8  b--black-10 mv4 w-100 w-100-l  shadow-5 center ">
-                <p className="fl bg-color tc w-70">STATE CONSTITUENCY ELECTION </p>
+                <p className="fl  tc w-70">STATE CONSTITUENCY ELECTION </p>
                 <input
                   type="button"
-                  className=" tc mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black dark-gray shadow-5  grow pointer  dib"
+                  className=" tc bd bg-color mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd  shadow-5  grow pointer  dib"
                   value="VOTE"
                   onClick={this.choiceState}
                 />
               </article>
 
               <article className="  ba    mw8  b--black-10 mv4 w-100 w-100-l  shadow-5 center ">
-                <p className="fl bg-color tc w-70">HOUSE OF REPRESENTATIVE ELECTION </p>
+                <p className="fl  tc w-70">HOUSE OF REPRESENTATIVE ELECTION </p>
                 <input
                   type="button"
-                  className=" tc mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black dark-gray shadow-5  grow pointer  dib"
+                  className=" tc bd bg-color mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd  shadow-5  grow pointer  dib"
                   value="VOTE"
                   onClick={this.choiceHouseOfRep}
                 />
               </article>
               <article className="  ba    mw8  b--black-10 mv4 w-100 w-100-l  shadow-5 center ">
-                <p className="fl bg-color tc w-70">SENETORIAL ELECTION </p>
+                <p className="fl  tc w-70">SENETORIAL ELECTION </p>
                 <input
                   type="button"
-                  className="tc mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd b-black dark-gray shadow-5  grow pointer  dib"
+                  className="tc bd  mv4 btn w-25 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset bd  shadow-5  grow pointer  dib"
                   value="VOTE"
                   onClick={this.choiceSenetorial}
                 />

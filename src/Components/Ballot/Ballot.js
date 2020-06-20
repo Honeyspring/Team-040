@@ -48,7 +48,7 @@ class Ballot extends Component{
         <div className=" covr mt2 w-100 w-100-m w-100-l  ">
           <Header />
           <div className=" w-100 w-100 w-100-l">
-            <h6 className="w-100 tc f3 f5-ns mt4 dark-gray center">Ballot</h6>
+            <h6 className="w-100 tc f2 f5-ns mt4 bg-color center">Ballot</h6>
             <article className="circles w-100 w-100-l  center ">
               {/* ToDo:Dispaly all contesting parties according to the category of votes selected */}
               <img
