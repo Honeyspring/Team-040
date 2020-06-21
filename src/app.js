@@ -31,16 +31,16 @@ const App = ({ store }) => {
     <Provider store={store}>
       <Router>
         <Switch>
-          <Route exact path="/" component={Welcome} />
-          <Route path="/home" component={Home} />
-          <Route path="/how_it_works" component={Start} />
-          <Route path="/contestants" component={ContestantService} />
-          <Route path="/vote" component={Vote} />
-          <Route path="/ballot" component={Ballot} />
-          <Route path="/profile_update" component={Update} />
-          <Route path="/about" component={About} />
-          <Route path="/loader" component={Loader} />
-          <Route path="/profile" component={Profile} />
+          <ProtectedRoute exact path="/" component={Welcome} />
+          <ProtectedRoute path="/home" component={Home} />
+          <ProtectedRoute path="/how_it_works" component={Start} />
+          <ProtectedRoute path="/contestants" component={ContestantService} />
+          <ProtectedRoute path="/vote" component={Vote} />
+          <ProtectedRoute path="/ballot" component={Ballot} />
+          <ProtectedRoute path="/profile_update" component={Update} />
+          <ProtectedRoute path="/about" component={About} />
+          <ProtectedRoute path="/loader" component={Loader} />
+          <ProtectedRoute path="/profile" component={Profile} />
           <Route path="/signIn" component={LoginService} />
           <Route path="/register" component={RegisterService} />
           <Route component={() => <h1>404 PAGE NOT FOUND</h1>} />

@@ -8,6 +8,7 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import { TOKEN } from '../../constants/APIConfig';
 
+
 class Register extends Component {
   constructor(props) {
     super(props);
@@ -50,6 +51,7 @@ class Register extends Component {
     return (
       <div className=" covr  br3 ba  b--black-10  w-100 w-100-m w-100-l  shadow-5 ">
         <Header location='/signIn' />
+
         <article className="sign  center br3 ba  b--black-10 mv4 w-100 w-50-m w-50-l mw6  shadow-5  ">
           <main className="pa4 ">
             <div className="measure centre">
@@ -122,6 +124,7 @@ class Register extends Component {
             </div>
           </main>
         </article>
+
         <Footer />
       </div>
     );

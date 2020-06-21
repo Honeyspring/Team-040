@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer";
  import pdp from "../../assets/parties/pdp.jpg";
 import "./ballot.css";
 
+
 class Ballot extends Component{
   constructor(props){
     super(props);
@@ -47,6 +48,7 @@ class Ballot extends Component{
       <div>
         <div className=" covr mt2 w-100 w-100-m w-100-l  ">
           <Header />
+
           <div className=" w-100 w-100 w-100-l">
             <h6 className="w-100 tc f2 f5-ns mt4 bg-color center">Ballot</h6>
             <article className="circles w-100 w-100-l  center ">
@@ -114,7 +116,9 @@ class Ballot extends Component{
               </div>
             </div>
           </div>
+
         </div>
+
         <Footer />
       </div>
     );

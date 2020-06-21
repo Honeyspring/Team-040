@@ -10,9 +10,11 @@ import relaxed from '../../assets/icons/relaxed.ico';
 import palmScan from '../../assets/icons/palmScan.ico';
 import africa from '../../assets/icons/africa.ico';
 
+
 const Welcom = () => (
   <div className=" covr  br3 ba  b--black-10  w-100 w-100-m w-100-l  shadow-5 ">
     <Header location='/' />
+
     <div className="flex  wlcm  mt2 container w-100 w-100 w-100-l">
       <article className=" br3 ba  bg-color  mw  b--black-10 mv4 w-50 w-50-l  shadow-5 center flex flex-column">
         <legend className="f4  ph2 fw6 mh0">
@@ -71,6 +73,7 @@ const Welcom = () => (
         </Link>
       </div>
     </div>
+
     <Footer />
   </div>
 );

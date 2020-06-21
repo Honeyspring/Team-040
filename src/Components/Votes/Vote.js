@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Header from "../Header/mainHeader";
 import Footer from "../Footer/Footer";
-// import  "./Vote.css";
 
 class Vote extends Component {
   constructor(props) {
@@ -96,9 +95,9 @@ class Vote extends Component {
               </article>
             </article>
           </div>
-        </div>
         <Footer />
       </div>
+       </div>
     );
   }
 }

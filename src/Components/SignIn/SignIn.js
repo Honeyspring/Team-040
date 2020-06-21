@@ -9,6 +9,7 @@ import Footer from '../Footer/Footer';
 import '../Welcome/Welcome.css';
 import { TOKEN } from '../../constants/APIConfig';
 
+
 class SignIn extends Component {
   constructor(props) {
     super(props);
@@ -42,6 +43,7 @@ class SignIn extends Component {
       return (
         <div className=" covr  br3 ba  b--black-10  w-100 w-100-m w-100-l  shadow-5 ">
           <Header location="/register" />
+
           <article className="sign mw  center br3 ba  b--black-10 mv4 w-100 w-50-m w-50-l m6  shadow-5  ">
             <main className="pa4 ">
               <div className="measure centre">
@@ -95,10 +97,11 @@ class SignIn extends Component {
               </div>
             </main>
           </article>
+
           <Footer />
         </div>
       );
-    
+
   }
 }
 

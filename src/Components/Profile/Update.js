@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from "../Header/mainHeader";
 import Footer from "../Footer/Footer";
 
+
 class Update extends Component{
  constructor(props){
     super(props);
@@ -11,22 +12,21 @@ class Update extends Component{
    this.fileUpload= this.fileUpload.bind(this);
    this.update= this.update.bind(this);
     }
- 
+
 fileUpload=()=>{
-        // upload pic 
+        // upload pic
     }
 
 update=()=>{
-    // get user's info and update 
+    // get user's info and update
 }
 
   render(){
-   
+
     return (
     <div>
       <Header />
-     
-      <article className="sign  center br3 ba  b--black-10 mv4 w-100 w-50-m w-50-l mw6  shadow-5  ">
+     <article className="sign  center br3 ba  b--black-10 mv4 w-100 w-50-m w-50-l mw6  shadow-5  ">
           <main className="pa4 ">
             <div className="measure centre">
               <form >
@@ -36,11 +36,11 @@ update=()=>{
                     <input
                       className="pa2 f4 fw6 mv3 input-reset h3  hover-bg hover-black w-100"
                       type="file"
-                     
+
                       name="picture"
                       id="picture"
                       required
-                    
+
                     />
                     <input
                       className="tc mv4  btn center w-50 b link ph3 h3 f4 fw6 pv3 bg-transparent input-reset ba b-white  shadow-5  grow pointer  dib"
@@ -61,7 +61,7 @@ update=()=>{
                       required
                       placeholder="johnny@gmail.com"// email gotten from db
                     />
-                    
+
                   </div>
                   <div className="mv3 ">
                     <input
@@ -107,7 +107,7 @@ update=()=>{
                       placeholder=" 13/09/1983" // date of birth gotten from db
                     />
                   </div>
-                
+
                   <div className="mv3 ">
                     <input
                       className="pa2 f3 fw6 mv3 input-reset h3  hover-bg hover-black w-100"
@@ -136,14 +136,15 @@ update=()=>{
                   className="tc bg  mv4 w-100 b link ph3 h3 f3 fw6 pv3  input-reset bd b-black shadow-5  grow pointer  dib"
                   type="submit"
                   value='UPDATE'
-                 
+
                 />
               </form>
 
-            
+
             </div>
           </main>
         </article>
+
       <Footer />
     </div>
   );

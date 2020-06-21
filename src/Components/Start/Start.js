@@ -9,6 +9,7 @@ import one from "../../assets/icons/shadowUnity.jpg";
 import two from "../../assets/icons/email_32.png";
 import { TOKEN } from '../../constants/APIConfig';
 
+
 class Start extends Component{
   constructor(){
     super();
@@ -22,6 +23,7 @@ class Start extends Component{
       <div>
         <div className=" mt2  w-100 w-100-m w-100-l  ">
           {TOKEN.test(document.cookie) ? <MainHeader /> : <Header location="/how_it_works" />}
+         
           <div className="flex  container w-100 w-100 w-100-l">
             <h6 className="w-100 tc f3 f5-ns mt0  dark-gray center">Take The short tour </h6>
             <article className=" br3 ba  bg-color  mw  b--black-10 mv4 w-100 w-50-m w-50-l  shadow-5 center flex flex-column">
@@ -53,6 +55,7 @@ class Start extends Component{
             </div>
           </div>
         </div>
+
         <Footer />
       </div>
     );

@@ -4,6 +4,7 @@ import Header from "../Header/mainHeader";
 import Footer from "../Footer/Footer";
 import  "./Home.css";
 
+
 class Home extends Component{
   constructor(){
     super();
@@ -45,6 +46,7 @@ choicePresidential(){
       <div>
         <div className=" covr mt2 w-100 w-100-m w-100-l   ">
           <Header />
+         
           <div className="flex    container w-100 w-100 w-100-l">
             <h6 className="w-100 tc f3 b f5-ns mt0 bg-color center">Voting Categories</h6>
             <article className="w-100 w-100-l  center flex ">
@@ -130,6 +132,7 @@ choicePresidential(){
             </div>
           </div>
         </div>
+
         <Footer />
       </div>
     );

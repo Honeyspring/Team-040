@@ -11,12 +11,12 @@ import oyin from '../../assets/team/oyinda.png';
 import sam from '../../assets/team/sam.jpeg';
 
 
+
 const About =()=>{
     return (
 
 <div className=" covr  br3 ba  b--black-10  w-100 w-100-m w-100-l  shadow-5 ">
 <Header/>
-
 
         <div className=" w-100 ">
         <h6 className="tc pr4 f2 bg-color flex flex-column  ">About </h6>
