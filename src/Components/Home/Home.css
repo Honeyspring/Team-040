@@ -58,3 +58,7 @@ p {
   max-height: 436px;
   float: left;
 }
+.logout:hover {
+  background-color: #ff0000;
+  color: #ffff;
+}
